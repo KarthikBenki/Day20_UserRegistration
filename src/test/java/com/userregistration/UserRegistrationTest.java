@@ -61,4 +61,11 @@ public class UserRegistrationTest {
         boolean password = userRegistration.validatePassword("Kishore@123");
         Assertions.assertTrue(password);
     }
+
+    @Test
+    public void givenPassword_WhenAtleastOne_Numerics_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean password = userRegistration.validatePassword("Kishore@1");
+        Assertions.assertTrue(password);
+    }
 }
