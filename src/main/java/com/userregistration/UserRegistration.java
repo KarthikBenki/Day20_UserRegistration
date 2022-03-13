@@ -37,7 +37,6 @@ public class UserRegistration {
     }
     ArrayList<String> emailArrayList = new ArrayList<>();
     public void addEmail(){
-
         emailArrayList.add("abc@yahoo.com");
         emailArrayList.add("abc-100@yahoo.com");
         emailArrayList.add("abc111@abc.com");
@@ -46,6 +45,5 @@ public class UserRegistration {
         emailArrayList.add("abc@1.com");
         emailArrayList.add("abc@gmail.com.com");
         emailArrayList.add("abc@abc+100@gmail.com");
-
     }
 }
