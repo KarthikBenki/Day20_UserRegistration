@@ -3,6 +3,9 @@ package com.userregistration;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 
 public class UserRegistrationTest {
 
@@ -74,6 +77,70 @@ public class UserRegistrationTest {
         UserRegistration userRegistration = new UserRegistration();
         boolean password = userRegistration.validatePassword("Kishore@1");
         Assertions.assertTrue(password);
+    }
+
+    @Test
+    public void givenEmail1_WhenProper_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.addEmail();
+        boolean email = userRegistration.validateEmail(userRegistration.emailArrayList.get(0));
+        Assertions.assertTrue(email);
+    }
+
+    @Test
+    public void givenEmail2_WhenProper_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.addEmail();
+        boolean email = userRegistration.validateEmail(userRegistration.emailArrayList.get(1));
+        Assertions.assertTrue(email);
+    }
+
+    @Test
+    public void givenEmail3_WhenProper_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.addEmail();
+        boolean email = userRegistration.validateEmail(userRegistration.emailArrayList.get(2));
+        Assertions.assertTrue(email);
+    }
+
+    @Test
+    public void givenEmail4_WhenProper_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.addEmail();
+        boolean email = userRegistration.validateEmail(userRegistration.emailArrayList.get(3));
+        Assertions.assertTrue(email);
+    }
+
+    @Test
+    public void givenEmail5_WhenProper_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.addEmail();
+        boolean email = userRegistration.validateEmail(userRegistration.emailArrayList.get(4));
+        Assertions.assertTrue(email);
+    }
+
+    @Test
+    public void givenEmail6_WhenProper_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.addEmail();
+        boolean email = userRegistration.validateEmail(userRegistration.emailArrayList.get(5));
+        Assertions.assertTrue(email);
+    }
+
+    @Test
+    public void givenEmail7_WhenProper_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.addEmail();
+        boolean email = userRegistration.validateEmail(userRegistration.emailArrayList.get(6));
+        Assertions.assertTrue(email);
+    }
+
+    @Test
+    public void givenEmail8_WhenProper_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.addEmail();
+        boolean email = userRegistration.validateEmail(userRegistration.emailArrayList.get(7));
+        Assertions.assertTrue(email);
     }
 
 
